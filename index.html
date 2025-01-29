@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Navigating Fragrance Space with Graph Generative Models and Odor Prediction</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+
+  <!-- Favicons -->
+  <link href="assets/img/webIcon.webp" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+
+</head>
+
+<body class="index-page">
+
+  <header id="header" class="header d-flex align-items-center fixed-top">
+    <div class="header-container container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
+
+      <a href="index.html" class="logo d-flex align-items-center me-auto me-xl-0">
+        <h1 class="sitename" style="color: teal;">Exploring Fragrance Space With Generative Models</h1>
+      </a>
+
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="#hero" class="active">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#features">Features</a></li>      
+          <li><a href="#contact">Contributors</a></li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+
+      <a class="btn-getstarted" href="index.html#about">Get Started</a>
+
+    </div>
+  </header>
+
+  <main class="main">
+    <section id="hero" class="hero section">
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <div class="row align-items-center">
+          <div class="col-lg-6">
+            <div class="hero-content" data-aos="fade-up" data-aos-delay="200">
+              <div class="company-badge mb-4">
+                <i class="bi bi-gear-fill me-2"></i>
+                Fragrance Space With Generative Models
+              </div>
+
+              <h1 class="mb-4">
+                Fragrance Space with <br>
+                Graph Generative Models and <br>
+                <span class="accent-text">Odor Prediction</span>
+              </h1>
+
+              <p class="mb-4 mb-md-5">
+                We introduce a suite of generative modelling techniques to 
+efficiently navigate and explore the complex landscapes of odor 
+and the broader chemical space. Unlike traditional approaches, we 
+not only generate molecules but also predict the odor likeliness 
+and classify probable odor labels. We show that odor likeliness is a 
+function of physicochemical features.
+              </p>
+
+              <!-- <div class="hero-buttons">
+                <a href="assets/img/cowHealth.mp4" class="btn btn-link mt-2 mt-sm-0 glightbox">
+                  <i class="bi bi-play-circle me-1"></i>
+                  Play Video
+                </a>
+                <a href="assets\img\CowHealthSimple.mp4" class="btn btn-link mt-2 mt-sm-0 glightbox">
+                  <i class="bi bi-play-circle me-1"></i>
+                  Play Video
+                </a>
+              </div> -->
+            </div>
+          </div>
+
+          <div class="col-lg-6">
+            <div class="hero-image" data-aos="zoom-out" data-aos-delay="300">
+              <img src="assets/img/order_1.png" alt="Hero Image" class="img-fluid" style="border-radius: 5%;">
+
+              <!-- <div class="customers-badge">
+                <div class="customer-avatars">
+                  <img src="assets/img/avatar-1.webp" alt="Customer 1" class="avatar">
+                  <img src="assets/img/avatar-2.webp" alt="Customer 2" class="avatar">
+                  <img src="assets/img/avatar-3.webp" alt="Customer 3" class="avatar">
+                  <img src="assets/img/avatar-4.webp" alt="Customer 4" class="avatar">
+                  <img src="assets/img/avatar-5.webp" alt="Customer 5" class="avatar">
+                  <span class="avatar more">12+</span>
+                </div>
+                <p class="mb-0 mt-0">12,000+ lorem ipsum dolor sit amet consectetur adipiscing elit</p>
+              </div> -->
+            </div>
+          </div>
+        </div>
+
+        <div class="row stats-row gy-4 mt-5" data-aos="fade-up" data-aos-delay="500">
+          <div class="col-lg-4 col-md-6">
+            <div class="stat-item">
+              <div class="stat-icon">
+                <i class="bi bi-tree"></i>
+              </div>
+              <div class="stat-content">
+                <h4>2x Farm</h4>
+                <p class="mb-0">Farm Deployment</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="stat-item">
+              <div class="stat-icon">
+                <i class="bi bi-display"></i>
+              </div>
+              <div class="stat-content">
+                <h4>5x Devices</h4>
+                <p class="mb-0">Devices working</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="stat-item">
+              <div class="stat-icon">
+                <i class="bi bi-graph-up"></i>
+              </div>
+              <div class="stat-content">
+                <h4>24 lakh Datapoint</h4>
+                <p class="mb-0">Model Train on Dataset</p>
+              </div>
+            </div>
+          </div>
+          <!-- <div class="col-lg-3 col-md-6">
+            <div class="stat-item">
+              <div class="stat-icon">
+                <i class="bi bi-award"></i>
+              </div>
+              <div class="stat-content">
+                <h4>Technology</h4>
+                <p class="mb-0"></p>
+              </div>
+            </div>
+          </div> -->
+        </div>
+
+      </div>
+
+    </section>
+
+    <section id="about" class="about section">
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row gy-4 align-items-center justify-content-between">
+
+          <div class="col-xl-5" data-aos="fade-up" data-aos-delay="200">
+            <!-- <span class="about-meta">MORE ABOUT Cow Health Monitoring System</span>
+            <h2 class="about-title">Node in Cow’s neck</h2>
+            <p class="about-description">Collect and transmit data to the Gateway..</p> -->
+
+            <h2 class="about-title">About</h2>
+            <p class="about-description">The whole process involves four key.</p>
+
+            <p class="about-description">stages: molecule generation, stringent sanitization checks for molecular validity, fragrance
+              likeliness screening and odor prediction of the generated molecules.
+            </p>
+
+
+            <div class="row feature-list-wrapper">
+              <div class="col-md-12">
+                <ul class="feature-list">
+                  <li><i class="bi bi-check-circle-fill"></i> The  development  of  an  integrated  framework  that  incorporates  molecule  generation,  stringent  molecular 
+                    validation,  odor likeliness screening and odor prediction.</li>
+                  <li><i class="bi bi-check-circle-fill"></i>  The  construction  and  interpretability  analysis  of  the  odor  likeliness  equation,  along  with  comparison  with 
+                    other fragrance criteria.</li>
+                  <li><i class="bi bi-check-circle-fill"></i>An extensive analysis of embedding space of generated molecules and the odor labels predicted for them.
+                  </li>
+                </ul>
+              </div>
+              <!-- <div class="col-md-6">
+                <ul class="feature-list">
+                  <li><i class="bi bi-check-circle-fill"></i> User-friendly UI.
+                  </li>
+                  <li><i class="bi bi-check-circle-fill"></i> Detect, observe, and Understand animal activity.  </li>
+                  <li><i class="bi bi-check-circle-fill"></i> Access it from anywhere with any device.
+                  </li>
+                </ul>
+              </div> -->
+            </div>
+
+            <!-- <div class="info-wrapper">
+              <div class="row gy-4">
+                <div class="col-lg-5">
+                  <div class="profile d-flex align-items-center gap-3">
+                    <img src="assets/img/avatar-1.webp" alt="CEO Profile" class="profile-image">
+                    <div>
+                      <h4 class="profile-name">Mario Smith</h4>
+                      <p class="profile-position">CEO &amp; Founder</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-7">
+                  <div class="contact-info d-flex align-items-center gap-2">
+                    <i class="bi bi-telephone-fill"></i>
+                    <div>
+                      <p class="contact-label">Call us anytime</p>
+                      <p class="contact-number">+123 456-789</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div> -->
+          </div>
+
+          <div class="col-xl-6" data-aos="fade-up" data-aos-delay="300">
+            <div class="image-wrapper">
+              <div class="images position-relative" data-aos="zoom-out" data-aos-delay="400">
+                <img src="assets/img/about.png" alt="Business Meeting" class="img-fluid main-image rounded-4" style="width: 100%; height: 55vh;">
+                <!-- <img src="assets/img/cowhealth-3.png" alt="Team Discussion" class="img-fluid small-image rounded-4" style="width: 60%; height: 25vh;margin-top: 15%;"> -->
+              </div>
+              <!-- <div class="experience-badge floating">
+                <h3>350+ <span>Cows</span></h3>
+                <p>Of experience in business service</p>
+              </div> -->
+            </div>
+            
+          </div>
+        </div>
+
+      </div>
+
+    </section>
+
+    <section id="features" class="features section">
+
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Features</h2>
+        <p>Meeting the necessity of health monitoring with precision, ensuring care and connection for animals.</p>
+      </div>
+      <div class="container">
+
+        <div class="d-flex justify-content-center">
+
+          <ul class="nav nav-tabs" data-aos="fade-up" data-aos-delay="100">
+
+            <li class="nav-item">
+              <a class="nav-link active show" data-bs-toggle="tab" data-bs-target="#features-tab-1">
+                <h4>Odor Likeliness</h4>
+              </a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" data-bs-toggle="tab" data-bs-target="#features-tab-2">
+                <h4>Benchmarks</h4>
+              </a>
+
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" data-bs-toggle="tab" data-bs-target="#features-tab-3">
+                <h4>Statistical Analysis</h4>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" data-bs-toggle="tab" data-bs-target="#features-tab-4">
+                <h4>Odor Prediction</h4>
+              </a>
+            </li>
+
+          </ul>
+
+        </div>
+
+        <div class="tab-content" data-aos="fade-up" data-aos-delay="200">
+
+          <div class="tab-pane fade active show" id="features-tab-1">
+            <div class="row">
+              <div class="col-lg-4 order-2 order-lg-1 mt-3 mt-lg-0 d-flex flex-column justify-content-center">
+                <h3>Odor Likeliness</h3>
+                <p class="fst-italic">
+                  The Odor-likeliness equation is derived based
+                   on physicochemical properties of the molecules in the curated dataset.
+                </p>
+                <ul>
+                  <li><i class="bi bi-check2-all"></i> <span>Synthetic Minority Over-sampling Technique (SMOTE) to address class imbalance.</span></li>
+                  <li><i class="bi bi-check2-all"></i> <span>SHAP (SHapley Additive exPlanations) to identify important features.</span></li>
+                  <li><i class="bi bi-check2-all"></i> <span>VIF (Variance Inflation Factor) and Corelation coefficient to remove highly correlated features.</span></li>
+                  <li> <span></span></li>
+                </ul>
+              </div>
+              <div class="col-lg-8 order-1 order-lg-2 text-center">
+                <img src="assets/img/Feature_1.png" alt="" class="img-fluid"; style="width: 100%; height: 90%;">
+              </div>
+            </div>
+          </div><!-- End tab content item -->
+
+          <div class="tab-pane fade" id="features-tab-2">
+            <div class="row">
+              <div class="col-lg-6 order-2 order-lg-1 mt-3 mt-lg-0 d-flex flex-column justify-content-center">
+                <h3>Benchmarks</h3>
+                <p class="fst-italic">
+                  The benchmark from the MOSES paper was used to evaluate the models. The 
+                  Odor-likeliness equation was also compared with other fragrance likeliness 
+                  criteria such as GDB-17 Criteria, Rule of Three, Fragrance-Like Property.
+                  Benchmarks
+                  Validity Uniqueness  Novelty  Diversity Score Scaffold 
+                  Similarity Similarity to Nearest.
+                </p>
+                <ul>
+                  <li><i class="bi bi-check2-all"></i> <span>validity (adherence to
+                    chemical rules),</span></li>
+                  <li><i class="bi bi-check2-all"></i> <span>Uniqueness (absence of duplication among the generated SMILES),</span></li>
+                  <li><i class="bi bi-check2-all"></i> <span>Novelty
+                    (proportion of generated molecules absent from the training set),</span></li>
+                  <li><i class="bi bi-check2-all"></i> <span>Scaffold similarity (Scaff)</span></li>
+                  <li><i class="bi bi-check2-all"></i> <span>Similarity to a nearest neighbor (SNN).</span></li>
+                  <li><i class="bi bi-check2-all"></i> <span>comparision of odor likliness equation with other fragrance likliness criterion.</span></li>
+                  <li><i class="bi bi-check2-all"></i> <span>Similarity to a nearest neighbor (SNN).</span></li>
+                </ul>
+              </div>
+              <div class="col-lg-6 order-1 order-lg-2 text-center">
+                <img src="assets/img/Feature_2.png" alt="" class="img-fluid" style="height: 45vh; border-radius: 5%;">
+              </div>
+            </div>
+          </div><!-- End tab content item -->
+
+          <div class="tab-pane fade" id="features-tab-3">
+            <div class="row">
+              <div class="col-lg-6 order-2 order-lg-1 mt-3 mt-lg-0 d-flex flex-column justify-content-center">
+                <h3>Statistical Analy</h3>
+                <p class="fst-italic">
+                  Several statistical tests have been performed which confirm the properties of 
+the generated molecules and the original molecules differ in Molecular weight, 
+LogP, Fraction of Sp2 hybridized atoms and FCFP4 count.
+                </p>
+                <ul>
+                  <li><i class="bi bi-check2-all"></i> <span>KS statistics along with p-value.</span></li>
+                  <li><i class="bi bi-check2-all"></i> <span>Jensen Shannon divergence.</span></li>
+                  <li><i class="bi bi-check2-all"></i> <span>Violin Plots.</span></li>
+                  <li><i class="bi bi-check2-all"></i> <span>PCA of Fingerprints ( MACCS Keys, Morgan Fingerprints, Atom – Pair 
+                    Fingerprints ).</span></li>
+                </ul>
+                
+              </div>
+              <div class="col-lg-6 order-1 order-lg-2 text-center">
+                <img src="assets/img/Feature_3.png" alt="" class="img-fluid" style="height: 100%;width: 100%; border-radius: 1%;">
+              </div>
+            </div>
+          </div><!-- End tab content item -->
+
+          <div class="tab-pane fade" id="features-tab-4">
+            <div class="row">
+              <div class="col-lg-6 order-2 order-lg-1 mt-3 mt-lg-0 d-flex flex-column justify-content-center">
+                <h3>Odor Prediction</h3>
+                <p class="fst-italic">
+                  The structure-odor relationship is complex. Odor prediction of the generated 
+molecules was performed using Graph Neural Network.
+                </p>
+                <ul>
+                  <li><i class="bi bi-check2-all"></i> <span>Analysis of odor category distribution.</span></li>
+                  <li><i class="bi bi-check2-all"></i> <span>Highlights the odor labels generated by different generative models.</span></li>
+                  <li><i class="bi bi-check2-all"></i> <span>Discusses relationship between benchmark and predicted odor labels.</span></li>
+                </ul>
+                
+              </div>
+              <div class="col-lg-6 order-1 order-lg-2 text-center">
+                <img src="assets/img/Features_4.png" alt="" class="img-fluid" style="height: 40vh; border-radius: 5%;">
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- <section id="features-cards" class="features-cards section">
+
+      <div class="container">
+
+        <div class="row gy-4">
+
+          <div class="col-xl-3 col-md-6" data-aos="zoom-in" data-aos-delay="100">
+            <div class="feature-box orange">
+              <i class="bi bi-award"></i>
+              <h4>Data Publisher & Receiver</h4>
+              <p>IoT Devices which publishes data & Receives data from publishers.</p>
+            </div>
+          </div>
+
+          <div class="col-xl-3 col-md-6" data-aos="zoom-in" data-aos-delay="200">
+            <div class="feature-box blue">
+              <i class="bi bi-patch-check"></i>
+              <h4>Secured Cloud:</h4>
+              <p>Data is sent to the on
+                premise or secured cloud storage, where
+                Data preprocessing is done.</p>
+            </div>
+          </div>
+
+          <div class="col-xl-3 col-md-6" data-aos="zoom-in" data-aos-delay="300">
+            <div class="feature-box green">
+              <i class="bi bi-sunrise"></i>
+              <h4>ML Model:</h4>
+              <p>Deployed ML model will
+                generate inferences.</p>
+            </div>
+          </div>
+
+          <div class="col-xl-3 col-md-6" data-aos="zoom-in" data-aos-delay="400">
+            <div class="feature-box red">
+              <i class="bi bi-shield-check"></i>
+              <h4>Front-end:</h4>
+              <p>End user will access all the data
+                using front-end web app.</p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section> -->
+
+    <section id="contact" class="contact section light-background">
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Contributor</h2>
+        <p>CSIR-Central Scientific Instruments Organisation(CSIO)</p>
+      </div>
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row g-4 g-lg-10">
+
+          <div class="col-lg-12">
+            <div class="contact-form" data-aos="fade-up" data-aos-delay="300">
+              <h3>Contributor</h3>
+              <!-- <p>CSIR-Central Scientific Instruments Organisation(CSIO).</p> -->
+
+              <form action="forms/contact.php" method="post" class="php-email-form" data-aos="fade-up" data-aos-delay="200">
+                <div class="row gy-4">
+
+                  <div class="col-md-2">
+                    <p style="font-size: medium; font-weight: 600;">Mrityunjay Sharma,</p>
+                  </div>
+
+                  <div class="col-md-10">
+                    <p style="font-size: medium;">CSIR-CSIO, Chandigarh, India</p>
+                  </div>
+                  <div class="col-md-2">
+                    <p style="font-size: medium; font-weight: 600;">Sarabeshwar Balaji,</b>
+                  </div>
+
+                  <div class="col-md-10">
+                    <p style="font-size: medium;">Indian Institute of Science 
+                      Education and Research Bhopal(IISERB), India</p>
+                  </div>
+                  <div class="col-md-2">
+                    <p style="font-size: medium; font-weight: 600;">Pinaki Saha,</p>
+                  </div>
+
+                  <div class="col-md-10">
+                    <p style="font-size: medium;">University of Hertfordshire, UH 
+                      Biocomputation Group,United Kingdom</p>
+                  </div>
+                  <div class="col-md-2">
+                    <p style="font-size: medium; font-weight: 600;">Ritesh Kumar,</p>
+                  </div>
+
+                  <div class="col-md-10">
+                    <p style="font-size: medium;">CSIR-CSIO, Chandigarh, India</p>
+                  </div>
+                  
+                </div>
+              </form>
+
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+  </main>
+
+  <footer id="footer" class="footer">
+
+    <div class="container footer-top">
+      <div class="row gy-4">
+        <div class="col-lg-4 col-md-6 footer-about">
+          <a href="index.html" class="logo d-flex align-items-center">
+            <span class="sitename">Exploring Fragrance Space With Generative Models</span>
+          </a>
+          <div class="footer-contact pt-3">
+            <p>Sector 30 Chandigarh</p>
+            <p>CSIR-CSIO</p>
+            <p class="mt-3"><strong>Phone:</strong> <span>+91 5589 55488 55</span></p>
+            <p><strong>Email:</strong> <span>riteshkr@csio.res.in</span></p>
+          </div>
+          <div class="social-links d-flex mt-4">
+            <a href=""><i class="bi bi-twitter-x"></i></a>
+            <a href=""><i class="bi bi-facebook"></i></a>
+            <a href=""><i class="bi bi-instagram"></i></a>
+            <a href=""><i class="bi bi-linkedin"></i></a>
+          </div>
+        </div>
+
+        <div class="col-lg-4 footer-links">
+          <h4>Useful Links</h4>
+          <ul>
+            <li><a href="#hero" class="active">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#features">Features</a></li>
+          <li><a href="#contact">Contributors</a></li>
+          </ul>
+        </div>
+
+       </div>
+    </div>
+
+    <div class="container copyright text-center mt-4">
+      <p>© <span>Copyright</span> <strong class="px-1 sitename">CSIO</strong> <span>All Rights Reserved</span></p>
+      <div class="credits">
+        Designed by <a href="https://www.linkedin.com/feed/">Suman Kumar</a>
+      </div>
+    </div>
+
+  </footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
